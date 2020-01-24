@@ -1,0 +1,211 @@
+.container1 {
+  width: 100%;
+  height: 100%;
+}
+.nav-bar {
+  /* border: 1px solid black; */
+  position: fixed;
+  top: -10%;
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+.nav-bar_name,
+.nav-bar_icon {
+  position: absolute;
+  /* border: 1px solid black; */
+}
+.nav-bar_name {
+  font-size: 1.4rem;
+  left: 3%;
+}
+.nav-bar_icon {
+  right: 3%;
+}
+.nav-bar_icon2 {
+  position: absolute;
+  right: 23%;
+  width: 25px;
+  height: 25px;
+  top: -150%;
+}
+.nav-bar_icon2:hover {
+  cursor: pointer;
+}
+.line1,
+.line2 {
+  position: absolute;
+  width: 100%;
+  height: 3.2px;
+  top: 44%;
+  background-color: black;
+  border-radius: 12%;
+}
+.line1 {
+  transform: rotate(45deg);
+}
+.line2 {
+  transform: rotate(-45deg);
+}
+.icon-menu {
+  font-size: 2rem;
+}
+.icon-menu:hover {
+  cursor: pointer;
+}
+.main-slogan {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  height: 45%;
+  left: -10%;
+}
+.main-slogan_1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.main-slogan_2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  position: absolute;
+  top: 20%;
+}
+.copyright {
+  position: absolute;
+  bottom: -20%;
+  left: 3%;
+  display: none;
+}
+.menu {
+  position: absolute;
+  /* border: 1px solid black; */
+  left: 50%;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu2 {
+  position: absolute;
+  left: 45%;
+}
+.image-box {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: 100%;
+  left: 100%;
+  position: absolute;
+}
+.img-coscuz {
+  position: absolute;
+  background-position: 0, -50%;
+  width: 80%;
+  height: 38%;
+  top: 40%;
+  /* border: 1px solid black; */
+}
+.coscuz0 {
+  background-image: url("/image/coscuz/main0.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.coscuz1 {
+  background-image: url("/image/coscuz/main1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+.coscuz2 {
+  background-image: url("/image/coscuz/main2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+.coscuz3 {
+  background-image: url("/image/coscuz/main3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+.coscuz4 {
+  background-image: url("/image/coscuz/main4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+}
+/* container2 */
+.container2 {
+  width: 100%;
+  height: 100%;
+  background-color: #ff4500;
+  display: none;
+  position: absolute;
+  color: white;
+}
+.detail-box {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+.contact-box {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 150px;
+}
+.contact-box_main {
+  font-size: 1.5rem;
+}
+.contact-box_email {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  font-size: 1.5rem;
+}
+.contact-box_tel {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 1.5rem;
+}
+.what-we-do {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  height: 200px;
+}
+.what-we-do_main {
+  font-size: 1.5rem;
+}
+.what-we-do_detail {
+  position: absolute;
+  width: 91%;
+  top: 25%;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  word-spacing: 1.3px;
+}
+.why {
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 570px;
+  width: 100%;
+  height: 200px;
+}
+.why-main {
+  font-size: 1.5rem;
+}
+.why-detail {
+  position: absolute;
+  width: 91%;
+  top: 25%;
+  left: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  word-spacing: 1.3px;
+}
+/*  */

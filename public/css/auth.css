@@ -1,0 +1,158 @@
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
+  color: white;
+}
+.login-box {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  left: 37%;
+  top: 7.7%;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  background-color: #ffffff;
+  border-radius: 20px;
+  z-index: 1;
+  border: 1px solid #cccccc;
+}
+.login-back {
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.login-col {
+  position: absolute;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  left: 50%;
+  top: 77.6%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+}
+.login-google img {
+  width: 12%;
+  height: 12%;
+}
+.login-kakao img {
+  width: 12%;
+  height: 12%;
+}
+.login-naver img {
+  width: 12%;
+  height: 12%;
+}
+.login-google {
+  border-radius: 5px;
+  width: 250px;
+  padding: 7px 10px;
+  position: relative;
+  border: 1px solid #666666;
+}
+.login-kakao,
+.login-naver {
+  border-radius: 5px;
+  width: 250px;
+  margin-top: 10px;
+  padding: 7px 10px;
+  position: relative;
+  border: 1px solid #666666;
+}
+.login-google-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin-left: 40px;
+  font-size: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+  position: absolute;
+  top: 33%;
+  left: 20%;
+}
+.login-kakao-text,
+.login-naver-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  font-size: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+  position: absolute;
+  top: 33%;
+  left: 22%;
+}
+.login-naver-text {
+  left: 22%;
+}
+.login-google-text span,
+.login-kakao-text span,
+.login-naver-text span {
+  font-weight: bolder;
+  color: black;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.login-detail {
+  font-family: "Nanum Gothic", sans-serif;
+  color: black;
+  position: absolute;
+  top: 59.5%;
+  font-size: 19px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  text-align: center;
+  background-color: white;
+  z-index: 4;
+}
+.login-slogan {
+  font-family: "Nanum Gothic", sans-serif;
+  color: black;
+  position: absolute;
+  font-size: 1.8rem;
+  top: 30%;
+  width: 320px;
+  text-align: center;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  line-height: 1.7;
+}
+.auth-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.auth-brand {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0 40px 20px 40px;
+}
+.login-box_logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}

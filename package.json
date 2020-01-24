@@ -1,0 +1,25 @@
+{
+  "name": "coscuz",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start main.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-mysql-session": "^2.1.0",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-kakao": "^1.0.0",
+    "passport-naver": "^1.0.6",
+    "sanitize-html": "^1.20.1"
+  }
+}

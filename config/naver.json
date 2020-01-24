@@ -1,0 +1,5 @@
+{
+  "clientID": "BcZHmCx8tXPVWBBlIuVp",
+  "clientSecret": "Zw1s7X54sa",
+  "callbackURL": "http://coscuz/auth/naver/callback"
+}

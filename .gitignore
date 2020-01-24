@@ -1,0 +1,5 @@
+
+.DS_Store
+sessions/*
+config/google.json
+node_modules
