@@ -236,3 +236,6 @@ $(".nav-bar_icon2").on("click", function() {
     .stop()
     .animate({ top: "100%" }, 850, "easeOutQuint");
 });
+function(){
+  
+}
