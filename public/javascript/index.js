@@ -239,3 +239,4 @@ $(".nav-bar_icon2").on("click", function() {
 function(){
   
 }
+d
