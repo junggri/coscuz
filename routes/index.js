@@ -1,13 +1,18 @@
 var express = require("express");
 var router = express.Router();
 var index = require("../lib/index");
-var auth = require("../lib/auth");
+var test = require("../lib/test");
+var fs = require("fs");
 
 module.exports = function(passport) {
   router.get("/", function(req, res) {
-    var html = index.html(auth.StatusUI(req, res));
-    //res.send(html);
-    res.render("index.html");
+    fs.readdir("./public/image", function(err, data) {
+      console.log(data);
+      var Lists = test.brand(data);
+      var html = index.html(Lists);
+      res.send(html);
+      // res.render("index.html");
+    });
   });
   return router;
 };

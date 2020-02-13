@@ -40,10 +40,8 @@ app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
 
 var indexRouter = require("./routes/index")(passport);
-var authRouter = require("./routes/auth");
 
 app.use("/", indexRouter);
-app.use("/auth", authRouter);
 
 app.use(logger("dev"));
 app.use(express.json());
