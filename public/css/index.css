@@ -66,6 +66,9 @@
   position: absolute;
   width: 100%;
   height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
 }
 .brand-desc {
   position: absolute;

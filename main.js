@@ -2,14 +2,14 @@ var createError = require("http-errors");
 var express = require("express");
 var app = express();
 var path = require("path");
-var cookieParser = require("cookie-parser");
+// var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-var session = require("express-session");
+// var session = require("express-session");
 var bodyParser = require("body-parser");
 var helmet = require("helmet");
 var sanitizeHtml = require("sanitize-html");
-var MySQLStore = require("express-mysql-session")(session);
-var configSession = require("./config/session.json");
+// var MySQLStore = require("express-mysql-session")(session);
+// var configSession = require("./config/session.json");
 
 app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -34,7 +34,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 var passport = require("./lib/passport")(app);
 
-app.use(express.static("public"));
+var publicPath = path.resolve(__dirname, "public");
+app.use(express.static(publicPath));
+
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
@@ -46,7 +48,7 @@ app.use("/", indexRouter);
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+// app.use(cookieParser());
 
 app.set("port", process.env.PORT || 3000); //80번 포트로 바꾸기
 
