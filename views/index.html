@@ -25,16 +25,51 @@
   </head>
   <body>
     <div class="nav-bar">
-      <div class="nav-bar_left">COSCUZ</div>
+      <div class="nav-bar_left">
+        <div class="nav-bar_left_list1">COSCUZ</div>
+      </div>
       <div class="nav-bar_right">
-        <div class="nav-bar_right_list list1">로그인</div>
-        <div class="nav-bar_right_list list2">회원가입</div>
-        <div class="nav-bar_right_list list3">소개</div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="search-text"
+            name="searchBrand"
+            placeholder="원하시는 브랜드를 찾아보세요"
+          />
+        </div>
+        <div class="icon-box"></div>
+      </div>
+      <div class="nav-bar_box">
+        <span>브랜드 등록하기</span>
       </div>
     </div>
-    <div class="container">
-      <div class="main-detail"></div>
-      <div class="main-slogan"></div>
+    <div id="container">
+      <div class="slide_wrap">
+        <div class="slide_box">
+          <div class="slide_list clearfix">
+            <div class="slide_content slide1">
+              <p>1</p>
+            </div>
+            <div class="slide_content slide2">
+              <p>2</p>
+            </div>
+            <div class="slide_content slide3">
+              <p>3</p>
+            </div>
+            <div class="slide_content slide4">
+              <p>4</p>
+            </div>
+            <div class="slide_content slide5">
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide_btn_box">
+          <div class="slide_btn_prev">Prev</div>
+          <div class="slide_btn_next">Next</div>
+        </div>
+        <ul class="slide_pagination"></ul>
+      </div>
     </div>
     <div class="brand-page">
       <div class="brand-page_slo">
@@ -67,7 +102,6 @@
         </div>
       </div>
     </div>
-
     <div class="footer">
       <div class="footer_coscuz">COSCUZ</div>
       <div class="footer_copy">©COSCUZ. All Rights Reserved.</div>
@@ -78,6 +112,8 @@
         </div>
       </div>
     </div>
+    <div class="register-login"></div>
+    <script src="/javascript/slide.js"></script>
     <script src="/javascript/index.js"></script>
   </body>
 </html>

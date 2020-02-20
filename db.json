@@ -1,5 +1,12 @@
 {
   "brands": ["a", "b", "c", "d", "e", "f"],
-  "desc": { "a": "a", "b": "b", "c": "c", "d": "d", "e": "e", "f": "f" },
+  "desc": {
+    "a": "desc a",
+    "b": "desc b",
+    "c": "desc c",
+    "d": "desc d",
+    "e": "desc e",
+    "f": "desc f"
+  },
   "count": 0
 }

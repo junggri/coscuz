@@ -8,19 +8,15 @@ const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const adapter = new FileSync("db.json");
 const db = low(adapter);
-
+// fs.readdir("./public/image/brand", function(err, data) 경로떄문에 복사 해둠
 module.exports = function() {
   router.get("/", function(req, res) {
-    fs.readdir("./public/image/brand", function(err, data) {
-      fs.readFile("./data/desc.txt", "utf8", function(err, desc) {
-        if (err) throw err;
-        let brand = ["a", "b", "c", "d", "e", "f"];
-        var Lists = brandList.brand(brand, desc);
-        var html = index.html(Lists);
-        res.send(html);
-        // res.render("index.html");
-      });
-    });
+    let brand = db.get("brands").value();
+    let desc = db.get("desc").value();
+    var Lists = brandList.brand(brand, desc);
+    var html = index.html(Lists);
+    res.send(html);
+    // res.render("index.html");
   });
   return router;
 };
