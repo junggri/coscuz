@@ -26,23 +26,45 @@
   <body>
     <div class="nav-bar">
       <div class="nav-bar_left">
-        <div class="nav-bar_left_list1">COSCUZ</div>
+        <span class="nav-bar_name">COSCUZ</span>
+        <span class="nav-bar_intro">소개</span>
+        <span class="nav-bar_brandship">브랜드쉽 신청하기</span>
       </div>
-      <div class="nav-bar_right">
-        <div class="input-box">
+      <div class="nav-bar_search">
+        <form action="">
           <input
             type="text"
-            class="search-text"
-            name="searchBrand"
-            placeholder="원하시는 브랜드를 찾아보세요"
+            placeholder="브랜드를 찾아보세요"
+            class="search-input"
           />
-        </div>
-        <div class="icon-box"></div>
+        </form>
+        <span class="search-icon"></span>
       </div>
-      <div class="nav-bar_box">
-        <span>브랜드 등록하기</span>
+      <div class="nav-bar_login">
+        로그인
+      </div>
+      <div class="nav-bar_register">
+        회원가입
       </div>
     </div>
+    <!-- <div class="nav-bar">
+      <div class="nav-bar_left">
+        <span class="nav-bar_name">COSCUZ</span>
+        <span class="nav-bar_intro">소개</span>
+        <span class="nav-bar_brandship">브랜드쉽 신청하기</span>
+      </div>
+      <div class="nav-bar_search_login">
+        <form action="">
+          <input
+            type="text"
+            placeholder="브랜드를 찾아보세요"
+            class="search-input_login"
+          />
+        </form>
+        <span class="search-icon_login"></span>
+      </div>
+      <div class="icon-torso"></div>
+    </div> -->
     <div id="container">
       <div class="slide_wrap">
         <div class="slide_box">
@@ -72,19 +94,20 @@
       </div>
     </div>
     <div class="brand-page">
-      <div class="brand-page_slo">
-        The New Vibe Brands
-      </div>
       <div class="brand-page_box">
+        <div class="brand-box">
+          <div class="brand-image"></div>
+          <div class="brand-desc">여기에는 이제 브랜드 설명이 들어간다</div>
+        </div>
         <div class="brand-box">
           <div class="brand-image"></div>
           <div class="brand-desc">desc</div>
         </div>
         <div class="brand-box">
           <div class="brand-image"></div>
-          <div class="brand-desc"></div>
+          <div class="brand-desc">desc</div>
         </div>
-        <div class="brand-box">
+        <!-- <div class="brand-box">
           <div class="brand-image"></div>
           <div class="brand-desc"></div>
         </div>
@@ -100,6 +123,10 @@
           <div class="brand-image"></div>
           <div class="brand-desc"></div>
         </div>
+        <div class="brand-box">
+          <div class="brand-image"></div>
+          <div class="brand-desc"></div>
+        </div> -->
       </div>
     </div>
     <div class="footer">
@@ -112,7 +139,7 @@
         </div>
       </div>
     </div>
-    <div class="register-login"></div>
+
     <script src="/javascript/slide.js"></script>
     <script src="/javascript/index.js"></script>
   </body>

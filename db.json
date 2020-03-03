@@ -1,5 +1,5 @@
 {
-  "brands": ["a", "b", "c", "d", "e", "f"],
+  "brands": ["a", "b", "c", "d", "e", "f", "G", "dd"],
   "desc": {
     "a": "desc a",
     "b": "desc b",
@@ -8,5 +8,11 @@
     "e": "desc e",
     "f": "desc f"
   },
-  "count": 0
+  "id": [],
+  "salt": [
+    "H2smY0Fs313Uylg9KLrNv3UdHsaQBuG0TQ+zMr8A6cTktxX04GFLGronvRpTpv6tD9vjV+lt82FDEcoN30UCng=="
+  ],
+  "password": [
+    "dWHzpx0Ge/vVDNcZM9Ed1yf9Aqu8qEn7y0o3Y6vkNHlNeIXkH3epZ5muyQ+BbdrL7hfoKT8t8X+SkRl58g5b0g=="
+  ]
 }
