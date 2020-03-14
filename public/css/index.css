@@ -17,6 +17,9 @@
 .nav-bar_name {
   font-size: 1.3rem;
 }
+.nav-bar_name:hover {
+  cursor: pointer;
+}
 .nav-bar_left span {
   margin-right: 35px;
 }
@@ -111,33 +114,32 @@
 }
 /* brand page */
 .brand-page {
-  width: 70%;
   position: relative;
-  left: 15%;
+  width: 73%;
+  margin: 0 auto;
 }
 .brand-page_nav-bar {
   border: 1px solid black;
   height: 70px;
 }
 .brand-page_box {
-  /* border: 1px solid black; */
   margin-top: 70px;
   position: relative;
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* 반응형으로 할 때 바꾸기*/
+  justify-content: space-around;
   padding-bottom: 40px;
 }
 .brand-box {
-  border: 1px solid #776e71;
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 7px;
   position: relative;
   width: 380px;
   height: 320px;
   margin-bottom: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .brand-box:hover {
   cursor: pointer;
@@ -229,7 +231,7 @@
 }
 
 /*  */
-.slide-_wrap {
+.slide_wrap {
   position: relative;
   margin: auto;
 }

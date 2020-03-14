@@ -12,8 +12,8 @@ module.exports = function() {
     let desc = db.get("desc").value();
     var Lists = brandList.brand(brand, desc);
     var html = index.html(Lists, authStatus);
-    res.send(html);
-    // res.render("index.html");
+    // res.send(html);
+    res.render("index.html");
   });
   return router;
 };

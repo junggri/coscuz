@@ -21,18 +21,17 @@ app.use(
     secret: configSession.secret,
     resave: false,
     saveUninitialized: true,
-    store: new FileStore()
-    // store: new MySQLStore({
-    //   host: configSession.host,
-    //   port: configSession.port,
-    //   user: configSession.user,
-    //   password: configSession.password,
-    //   database: configSession.database
-    // cookie: {
-    //   secure: true,
-    //   httpOnly: true
-    // }
-    // })
+    store: new MySQLStore({
+      host: configSession.host,
+      port: configSession.port,
+      user: configSession.user,
+      password: configSession.password,
+      database: configSession.database
+      // cookie: {
+      //   secure: true,
+      //   httpOnly: true
+      // }
+    })
   })
 );
 

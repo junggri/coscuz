@@ -10,3 +10,6 @@ $(".nav-bar_register").on("click", function() {
 $(".icon-torso").on("click", function() {
   location.href = "/auth/logout_process";
 });
+$(".nav-bar_name").on("click", () => {
+  location.href = "/";
+});
