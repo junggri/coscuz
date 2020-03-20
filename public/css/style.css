@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "auth.css";
 @import "brand.css";
+@import "brand.css";
 
 * {
   box-sizing: border-box;

@@ -40,6 +40,8 @@ var passport = require("./lib/passport")(app);
 var publicPath = path.resolve(__dirname, "public");
 app.use(express.static(publicPath));
 
+app.use("/dist", express.static("./dist"));
+
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
