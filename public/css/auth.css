@@ -4,45 +4,52 @@
   top: 52%;
   transform: translate(0, -50%);
 }
-.login-brandship {
-  position: absolute;
-  right: 15%;
-  top: 52%;
-  transform: translate(0, -50%);
-  border: 1px solid black;
-  padding: 10px 10px;
-  border-radius: 4px;
-}
 .register_login {
   position: absolute;
-  /* border: 1px solid #776e71; */
-  width: 400px;
-  height: 550px;
+  width: 430px;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 100px;
   background-color: #ffffff;
   z-index: 999;
 }
+.login_oauth_slo {
+  position: absolute;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: #292928;
+  font-weight: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -17%;
+}
+.register_login_slo {
+  letter-spacing: 3px;
+  font-size: 2.4rem;
+  color: #292928;
+  /* font-weight: 100; */
+}
 .register_login_slobox {
   position: absolute;
-  top: 7.7%;
 }
-
 .login-box {
   position: absolute;
-  height: 45%;
   width: 100%;
-  top: 25%;
+  margin-top: 80px;
 }
 .id-box,
 .pwd-box {
   position: absolute;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s all;
+}
+.id-box:hover,
+.pwd-box:hover {
+  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 .id-box input,
 .pwd-box input {
@@ -59,44 +66,117 @@
 .login-btn {
   width: 100%;
   height: 47px;
-  margin-top: 200px;
+  margin-top: 180px;
   background-color: transparent;
   outline-style: none;
-  background-color: skyblue;
+  background-color: #304ae2;
   border: none;
   font-size: 1rem;
+  color: white;
 }
 .login-btn:hover {
   cursor: pointer;
 }
-/*  */
+.login-flashMsg {
+  /* border: 1px solid black; */
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  margin-top: 128px;
+  font-size: 0.75rem;
+  color: #ff6666;
+}
+.login_forUser {
+  position: absolute;
+  margin-top: 145px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forUser_cookie {
+  position: relative;
+  box-sizing: border-box;
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forUser_cookie span {
+  font-weight: 100;
+  font-size: 0.85rem;
+}
+.forUser_findUser {
+  font-weight: 100;
+  font-size: 0.85rem;
+}
+.login_oauth {
+  position: absolute;
+  top: 220px;
+}
+.login_oauth:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 39%;
+  top: -10%;
+}
+.login_oauth:before {
+  position: absolute;
+  display: block;
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 39%;
+  right: 0;
+  top: -10%;
+}
+
+.login_loginLink {
+  top: 400px;
+}
+/* below register */
 .register {
   position: absolute;
   width: 400px;
-  height: 1200px;
   left: 50%;
-  top: 80%;
-  transform: translate(-50%, -50%);
+  margin-top: 120px;
+  transform: translate(-50%, 0%);
+  /* border: 1px solid black; */
 }
 .register_slobox {
   position: absolute;
   top: 0;
   width: 100%;
 }
-.register_login_slo {
+.register_slobox_slo {
   letter-spacing: 3px;
   font-size: 2.4rem;
   color: #292928;
 }
 .register_parentBox {
-  position: absolute;
-  height: 80%;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
+.register_loginLink {
+  /* border: 1px solid black; */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin-top: 40px;
+}
+.loginLink-slo {
+  margin-right: 15px;
+}
+.loginLink {
+  color: #304ae2;
+}
 .register_termBox {
-  border: 1px solid black;
-  position: absolute;
+  /* border: 1px solid black; */
+  position: relative;
   width: 100%;
   height: 120px;
   margin-top: 75px;
@@ -110,7 +190,6 @@
   align-items: center;
   margin-bottom: 40px;
   transition: 0.3s all;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
 }
 .register_box:hover {
   border: 1px solid rgba(0, 0, 0, 0.6);
@@ -120,6 +199,60 @@
 }
 .register_email {
   margin-bottom: 60px;
+}
+.register_emailValidation {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  transition: 0.3s all;
+  display: none;
+}
+#input_emailValidation {
+  position: relative;
+  width: 60%;
+  height: 47px;
+  left: 5%;
+  outline-style: none;
+  border: none;
+  background-color: transparent;
+  top: 2%;
+  font-size: 1rem;
+}
+.check_validation {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translate(0, -50%);
+  background-color: #304ae2;
+  font-size: 0.8rem;
+  width: 70px;
+  height: 70%;
+  border-radius: 4px;
+  transform: 0.3s all;
+}
+.validation_timer {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(0, -50%);
+  font-size: 0.9rem;
+  color: #ff6666;
+}
+.check_validation:hover {
+  cursor: pointer;
+}
+.check_validation span {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.register_emailValidation:hover {
+  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 .register_box input {
   width: 90%;
@@ -134,17 +267,17 @@
   margin-bottom: 20px;
 }
 .register-btn {
-  position: absolute;
   width: 100%;
   height: 47px;
-  bottom: 10%;
+  bottom: 0;
   outline-style: none;
-  background-color: skyblue;
+  background-color: #304ae2;
   border: none;
   font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: white;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  /* border-radius: 6px; */
 }
 .register-btn:hover {
   cursor: pointer;
@@ -157,6 +290,7 @@ input::placeholder {
   height: 200px;
   display: block;
   position: relative;
+  margin-bottom: 40px;
 }
 .register_address:after {
   position: absolute;
@@ -239,8 +373,7 @@ input::placeholder {
 .check_box {
   position: absolute;
   right: 3%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 0.8rem;
+  background-color: #6775a3;
   width: 70px;
   height: 70%;
   border-radius: 4px;
@@ -253,7 +386,8 @@ input::placeholder {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.7rem;
+  color: white;
 }
 .check_none {
   pointer-events: none;
@@ -267,116 +401,31 @@ input::placeholder {
 .check_box:hover {
   cursor: pointer;
 }
-#validation_box {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%); */
-  width: 20%;
-  height: 47%;
-  background-color: white;
-  border-radius: 10px;
-  display: none;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
-}
-.validation_slo {
-  position: absolute;
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.9rem;
-  letter-spacing: 1px;
-  text-align: center;
-  width: 75%;
-}
-/* .validation_slo:after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 45%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  left: 50%;
-  transform: translate(-50%, 0);
-  margin-top: 15px;
-} */
-.validation_detail {
-  position: absolute;
-  width: 84%;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  letter-spacing: 0.6px;
-  line-height: 1.3;
-  font-size: 0.9rem;
-}
-#input_validation {
-  position: absolute;
-  width: 50%;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 1.4rem;
-  outline-style: none;
-  border: none;
-}
-#input_validation::placeholder {
-  font-size: 1rem;
-  text-align: center;
-}
-.validation_timer {
-  position: absolute;
-  width: 50%;
-  /* border: 1px solid red; */
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ff6666;
-}
-.validation_iconBox {
-  position: absolute;
-  width: 75%;
-  height: 100px;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.validation_iconBox::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 80%;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  margin-top: -100px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.validation_icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.5px solid rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
-  width: 100px;
-  border-radius: 30px;
-  height: 50px;
-  transition: all 0.3s;
-  font-size: 1.1rem;
-}
-.cancle:hover {
-  color: #ff6666;
-  border: 1.5px solid #ff6666;
-  cursor: pointer;
-}
-.confirm:hover {
-  color: #00cc00;
-  border: 1.5px solid #00cc00;
-  cursor: pointer;
-}
 /*  */
+.state-icon {
+  position: absolute;
+  font-size: 20px;
+  right: 4%;
+  opacity: 0.5;
+}
+.icon-frown {
+  color: #ff6666;
+}
+.icon-smile {
+  color: #25c125;
+  opacity: 1;
+}
+/* register_user */
+
+.register_user_slo {
+  position: absolute;
+  margin-top: 70px;
+  font-size: 0.86rem;
+  font-weight: lighter;
+}
+.register_user_termBox {
+  margin-top: 110px;
+}
+.register_user-btn {
+  margin-top: 30px;
+}

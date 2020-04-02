@@ -3,7 +3,12 @@
 @import "auth.css";
 @import "brand.css";
 @import "brand.css";
-
+@import "previous.css";
+html,
+body,
+input {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+}
 * {
   box-sizing: border-box;
 }

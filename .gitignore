@@ -1,5 +1,5 @@
 
 .DS_Store
-sessions/*
-config/google.json
+config
 node_modules
+lib

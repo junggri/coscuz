@@ -16,13 +16,14 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/fontello/css/fontello.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="nav-bar">
@@ -36,17 +37,20 @@
     </div>
     <div class="register">
       <div class="register_slobox">
-        <div class="register_login_slo">회원가입</div>
+        <div class="register_slobox_slo">회원가입</div>
       </div>
       <div class="register_termBox">
-        <input type="checkbox">
+        <input type="checkbox" />
+        <div class="checkbox_slobox">
+          <span class="checkbox_slo">전체동의</span>
+          <span class="checkbox_detail">전체동의</span>
+        </div>
       </div>
       <form
-        action="/auth/register_process"
+        action="/auth/register_brand_process"
         method="post"
         class="register_parentBox"
         autocomplete="off"
-        onSubmit="return check()"
       >
         <div class="register_box register_id">
           <input
@@ -54,11 +58,10 @@
             name="id"
             placeholder="아이디"
             id="input_id"
+            autocomplete="off"
             required
           />
-          <div class="check_box check_id">
-            <span>아이디 인증</span>
-          </div>
+          <span class="icon-frown state-icon icon-id"></span>
           <span class="show_state state_id"></span>
         </div>
         <div class="register_box register_pwd1">
@@ -67,8 +70,10 @@
             name="pwd1"
             placeholder="비밀번호 입력"
             id="input_pwd1"
+            autocomplete="off"
             required
           />
+          <span class="icon-frown state-icon icon-pwd1"></span>
         </div>
         <div class="register_box register_pwd2">
           <input
@@ -76,9 +81,13 @@
             name="pwd2"
             placeholder="비밀번호 확인"
             id="input_pwd2"
+            autocomplete="off"
             required
           />
-          <span class="condition">소문자,대문자,숫자,특수문자를 조합한 8자이상</span>
+          <span class="icon-frown state-icon icon-pwd2"></span>
+          <span class="condition"
+            >소문자,대문자,숫자,특수문자를 조합한 8자이상</span
+          >
           <span class="show_state state_pwd"></span>
         </div>
         <div class="register_box register_name">
@@ -87,6 +96,7 @@
             name="name"
             placeholder="이름"
             id="input_name"
+            autocomplete="off"
             required
           />
         </div>
@@ -96,6 +106,7 @@
             name="email"
             placeholder="이메일"
             id="input_email"
+            autocomplete="off"
             required
           />
           <div class="check_box check_email check_none">
@@ -104,41 +115,66 @@
           <span class="condition">위의 이메일로 인증번호를 발송합니다.</span>
           <span class="show_state state_email"></span>
         </div>
+        <div class="register_emailValidation">
+          <input
+            type="text"
+            placeholder="인증번호를 입력해주세요."
+            autocomplete="off"
+            id="input_emailValidation"
+            required
+            maxlength="6"
+          />
+          <div class="validation_timer"></div>
+          <div class="check_validation">
+            <span>입력</span>
+          </div>
+        </div>
         <div class="register_box register_brandName">
           <input
             type="text"
             name="brandName"
             placeholder="브랜드명"
             id="input_brandName"
+            autocomplete="off"
             required
           />
         </div>
         <div class="register_address">
           <span class="address_slo">주소검색</span>
-          <input type="text" id="postcode" placeholder="우편번호" name="postcode" readonly required>
-          <input type="button" onclick="execDaumPostcode()" value="우편번호 찾기" id="adr_btn"><br>
-          <input type="text" id="roadAddress" name="roadAddress" placeholder="도로명주소" readonly required>
-          <input type="text" id="detailAddress" name="detailAddress" placeholder="상세주소" required>
+          <input
+            type="text"
+            id="postcode"
+            placeholder="우편번호"
+            name="postcode"
+            readonly
+            required
+          /></br>
+          <input type="button" value="우편번호 찾기" id="adr_btn" />
+          <input
+            type="text"
+            id="roadAddress"
+            name="roadAddress"
+            placeholder="도로명주소"
+            readonly
+            required
+          />
+          <input
+            type="text"
+            id="detailAddress"
+            name="detailAddress"
+            placeholder="상세주소"
+            autocomplete="off"
+            required
+          />
         </div>
         <button class="register-btn">완료</button>
       </form>
-
-    </div>
-    <div id="validation_box">
-      <span class="validation_slo">이메일  인증하기</span>
-      <span class="validation_detail"
-        >인증을 원하시는 이메일로 인증번호를 </br>전송하였습니다. 인증번호를
-        입력해주세요.</span
-      >
-      <input type="text" placeholder="인증번호 입력" id="input_validation" maxlength="6" numberOnly/>
-      <span class="validation_timer"></span>
-      <div class="validation_iconBox">
-        <div class="validation_icon cancle">취소</div>
-        <div class="validation_icon confirm">확인</div>
+      <div class="register_loginLink">
+        <span class="loginLink-slo">이미 회원가입을 하셨나요?</span>
+        <a href="/auth/login"><span class="loginLink">로그인</span></a>
       </div>
     </div>
-    
-    <script src="/javascript/validation.js"></script>
     <script src="/javascript/index.js"></script>
+    <script type="module" src="/javascript/validation.js"></script>
   </body>
 </html>

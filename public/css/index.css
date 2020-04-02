@@ -27,7 +27,7 @@
   position: absolute;
   right: 400px;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -49%);
   width: 330px;
   height: 60%;
   border-radius: 20px;
@@ -56,14 +56,14 @@
 }
 .nav-bar_login {
   position: absolute;
-  top: 52%;
+  top: 50%;
   right: 270px;
   transform: translate(0, -50%);
   color: rgba(0, 0, 0, 0.65);
 }
 .nav-bar_register {
   position: absolute;
-  top: 52%;
+  top: 50%;
   right: 327px;
   transform: translate(0, -50%);
   color: rgba(0, 0, 0, 0.65);
@@ -107,7 +107,7 @@
 .icon-torso {
   position: absolute;
   right: 270px;
-  top: 52%;
+  top: 50%;
   transform: translate(0, -50%);
   font-size: 1.4rem;
   opacity: 0.8;

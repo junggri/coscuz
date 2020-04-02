@@ -11,8 +11,8 @@ var session = require("express-session");
 var MySQLStore = require("express-mysql-session")(session);
 var FileStore = require("session-file-store")(session);
 var configSession = require("./config/session.json");
+var flash = require("connect-flash");
 
-app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
   session({
@@ -40,6 +40,8 @@ var passport = require("./lib/passport")(app);
 var publicPath = path.resolve(__dirname, "public");
 app.use(express.static(publicPath));
 
+app.use(flash());
+
 app.use("/dist", express.static("./dist"));
 
 app.set("views", __dirname + "/views");
@@ -47,7 +49,7 @@ app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
 
 var indexRouter = require("./routes/index")(passport);
-let authRouter = require("./routes/auth");
+let authRouter = require("./routes/auth.js");
 let brandRouter = require("./routes/brand");
 
 app.use("/", indexRouter);
@@ -61,9 +63,9 @@ app.use(express.urlencoded({ extended: false }));
 
 app.set("port", process.env.PORT || 3000); //80번 포트로 바꾸기
 
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
+app.use(function(req, res, next) {
+  res.end("Not Found");
+});
 
 app.use(function(req, res, next) {
   res.status(404).send("Sorry cant find that!");

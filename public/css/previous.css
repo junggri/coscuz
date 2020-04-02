@@ -1,0 +1,121 @@
+.previous_box {
+  position: absolute;
+  width: 430px;
+  height: 400px;
+  margin-top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  /* border: 1px solid black; */
+}
+.previous_slo {
+  position: absolute;
+  letter-spacing: 3px;
+  font-size: 2.4rem;
+  color: #292928;
+}
+.previous_detail {
+  position: absolute;
+  margin-top: 67px;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.6;
+  color: #292928;
+}
+.oauth_box {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black;. */
+}
+.previous_oauth::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 32%;
+  bottom: -8%;
+}
+.previous_oauth::before {
+  position: absolute;
+  display: block;
+  content: "";
+  right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 32%;
+  bottom: -8%;
+}
+.oauth_member {
+  width: 130px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: 0.3s all;
+  position: relative;
+}
+.oauth_member span {
+  position: absolute;
+  box-sizing: border-box;
+  font-weight: lighter;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #292928;
+}
+.oauth_member:hover {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.email_box {
+  height: 90px;
+  margin-top: 0px;
+  position: relative;
+}
+.email_slo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  color: #292928;
+  top: 1px;
+}
+.email_box_slo {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  font-weight: lighter;
+  letter-spacing: 1.2px;
+  color: white;
+  background-color: #304ae2;
+}
+
+.user_name,
+.user_email {
+  color: #292928;
+  background-color: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}
+.previous_loginLink {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 75px;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+.pre_loginLink-slo {
+  margin-right: 15px;
+}
+.pre_loginLink {
+  color: #304ae2;
+}

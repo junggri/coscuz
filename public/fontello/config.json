@@ -35,6 +35,36 @@
       "css": "torso",
       "code": 59395,
       "src": "elusive"
+    },
+    {
+      "uid": "d862a10e1448589215be19702f98f2c1",
+      "css": "smile",
+      "code": 61720,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "06ddc67d609c477cd5524a7238d7850d",
+      "css": "frown",
+      "code": 61721,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7e89c12b577c31bc91bfb61bb597f01f",
+      "css": "down-dir",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "937f4db8b6ff3348a1d9fcd5e12fd2fe",
+      "css": "mail",
+      "code": 59397,
+      "src": "iconic"
+    },
+    {
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail-1",
+      "code": 59398,
+      "src": "fontawesome"
     }
   ]
 }

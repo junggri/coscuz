@@ -3,7 +3,7 @@
 // };
 new naver.maps.Map("map_v3", {
   center: new naver.maps.LatLng(37.2900533, 127.1036797),
-
+  useStyleMap: true,
   zoom: 10,
 
   mapTypeControl: true
