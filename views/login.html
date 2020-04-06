@@ -43,7 +43,7 @@
           <div class="id-box">
             <input
               type="text"
-              name="id"
+              name="saveId"
               placeholder="아이디"
               autocomplete="off"
               required
@@ -64,10 +64,16 @@
           <div class="login_forUser">
             <div class="forUser_cookie">
               <input type="checkbox" id="userIdSave" />
-              <span>아이디 저장</span>
+              <span class="saveId_slo">아이디 기억하기</span>
             </div>
             <div class="forUser_findUser">
-              아이디/비밀번호 찾기 &#xE001;
+              <span class="find_user"
+                ><a href="/auth/account/user">아이디 / </a></span
+              >
+              <span class="find_pwd"
+                ><a href="/auth/account/pwd">비밀번호 찾기</a></span
+              >
+              &#xE001;
             </div>
           </div>
           <button class="login-btn">로그인</button>
@@ -92,7 +98,6 @@
         >
       </div>
     </div>
-    <script src="/javascript/index.js"></script>
-    <script src="/javascript/login.js"></script>
+    <script src="../dist/bundle.js"></script>
   </body>
 </html>

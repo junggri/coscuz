@@ -112,6 +112,9 @@
           <div class="check_box check_email check_none">
             <span>이메일 인증</span>
           </div>
+          <div class="cancel_validation">
+            <span>취소</span>
+          </div>
           <span class="condition">위의 이메일로 인증번호를 발송합니다.</span>
           <span class="show_state state_email"></span>
         </div>
@@ -124,7 +127,7 @@
             required
             maxlength="6"
           />
-          <div class="validation_timer"></div>
+          
           <div class="check_validation">
             <span>입력</span>
           </div>
@@ -174,7 +177,7 @@
         <a href="/auth/login"><span class="loginLink">로그인</span></a>
       </div>
     </div>
-    <script src="/javascript/index.js"></script>
+    <script src="../dist/bundle.js"></script>
     <script type="module" src="/javascript/validation.js"></script>
   </body>
 </html>

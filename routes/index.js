@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 const index = require("../lib/template/index");
 const brandList = require("../lib/brandList");
-const auth = require("../lib/login");
+const auth = require("../lib/authStatus");
 const db = require("../lib/lowdb");
 
-module.exports = function() {
-  router.get("/", function(req, res) {
+module.exports = function () {
+  router.get("/", function (req, res) {
     let authStatus = auth.status(req, res);
     let brand = db.get("brands").value();
     let desc = db.get("desc").value();

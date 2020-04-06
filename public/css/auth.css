@@ -97,19 +97,26 @@
 .forUser_cookie {
   position: relative;
   box-sizing: border-box;
-  width: 90px;
+  width: 115px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.saveId_slo:hover {
+  cursor: pointer;
+}
 .forUser_cookie span {
   font-weight: 100;
+  position: absolute;
   font-size: 0.85rem;
+  top: 10%;
+  right: 0;
 }
 .forUser_findUser {
   font-weight: 100;
   font-size: 0.85rem;
 }
+
 .login_oauth {
   position: absolute;
   top: 220px;
@@ -230,6 +237,32 @@
   height: 70%;
   border-radius: 4px;
   transform: 0.3s all;
+}
+.cancel_validation {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translate(0, -50%);
+  background-color: #304ae2;
+  font-size: 0.8rem;
+  width: 70px;
+  height: 70%;
+  border-radius: 4px;
+  transform: 0.3s all;
+  display: none;
+}
+.cancel_validation:hover {
+  cursor: pointer;
+}
+.cancel_validation span {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+  color: white;
 }
 .validation_timer {
   position: absolute;
