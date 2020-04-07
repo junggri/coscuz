@@ -1,5 +1,0 @@
-{
-  "clientID": "BcZHmCx8tXPVWBBlIuVp",
-  "clientSecret": "Zw1s7X54sa",
-  "callbackURL": "http://localhost:3000/auth/naver/callback"
-}
