@@ -13,7 +13,7 @@ router.get("/login", function (req, res) {
   res.render("login.html");
 });
 
-router.post("/login_process", function (req, res) {
+router.post("/login_process", function (req, res, next) {
   req.flash("msg", "로그인정보가 일치하지 않습니다.");
   let msg = req.flash("msg");
   let html = loginTemplate.html(msg);
@@ -21,6 +21,7 @@ router.post("/login_process", function (req, res) {
     `SELECT * FROM brand_info JOIN saltvalue on brand_info.id = saltvalue.id where brand_info.id = ?`,
     [req.body.saveId],
     (err, data) => {
+      if (err) next(err);
       if (data.length === 0) {
         res.send(html);
         return;
