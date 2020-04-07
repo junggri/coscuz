@@ -130,8 +130,8 @@ router.get("/logout_process", (req, res) => {
   });
 });
 
-router.get("/account/:state", (req, res) => {
-  res.send(req.params);
+router.get("/account", (req, res) => {
+  res.render("account.html");
 });
 
 // bleow ajax calling
@@ -165,7 +165,6 @@ router.post("/nodemailerTest", (req, res) => {
     `select * from brand_info where email=?`,
     [req.body.email],
     (err, data) => {
-      let responseData = null;
       if (data.length === 0) {
         responseData = {
           state: "사용가능한 이메일입니다.",
